@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;400;600;800&display=swap');
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Noto Sans Display;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+body{
+    background: #F0EEF7;
+}
+header{
+    background-color: #FFD575;
+}
+nav{
+    max-width: 1440px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.logo{
+    position: absolute;
+    left: 79px;
+    top: 48px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 33px;
+    color: #000000;
+    text-decoration: none;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 25px;
+    gap: 2rem;
+}
+section:nth-child(1){
+    padding: 30px 0;
+    background: linear-gradient(185deg, #FFD575 71.42%, #F0EEF7 71.58%);
+    display: flex;
+    align-items: center;
+}
+.home-top{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+}
+.home-top h1{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000000;
+}
+.home-top h2{
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #ffffff;
+}
+.home-top > p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000000;
+    max-width: 449px;
+    margin: auto;
+    padding: 0 20px;
+}
+.porto{
+    margin: 1rem 0;
+    width: 40vw;
+    min-width: 300px;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+}
+.about-us{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10em 20px;
+}
+.content-text{
+    max-width: 449px;
+}
+.content-text h1, .services h1, .features h1, .journey h1, .team h1{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content-text h1 span, .services h1 span, .card h2 span, .features h1 span, .journey h1 span, .team h1 span{
+    color: #FFB201;
+}
+.content-text p, .services p{
+    font-size: 1.2em;
+}
+.img-content-about img{
+    width: 35vw;
+    min-width: 300px;
+}
+.services, .features{
+    max-width: 1440px;
+    margin: auto;
+    padding: 5rem 20px;
+}
+.services > :where(h1, p){
+    text-align: center;
+}
+.services > p{
+    max-width: 449px;
+    margin: auto;
+}
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+.card{
+    background: #F0EEF7;
+    border-radius: 10px;
+    padding: 50px 10px 20px;
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+}
+.card > i{
+    font-size: 5rem;
+    color: #FFB201;
+}
+.card h2{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card p{
+    color: #868686;
+    font-size: 1.2rem;
+}
+.card:hover{
+    background-color: #FFD575;
+    border: 2px solid #FFD575;
+}
+.card:hover > i, .card:hover > h2 span{
+    color: #FFFFFF;
+}
+.card:hover > p{
+    color: #000000;
+}
+.features h1{
+    text-align: center;
+}
+.features-text{
+    flex: 1 0 250px;
+    max-width: 300px;
+}
+.picture-features img{
+    width: 30vw;
+    min-width: 300px;
+}
+.container-features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.features-text:nth-child(1){
+    align-self: flex-start;
+    margin-top: 100px;
+}
+.features-text:nth-child(3){
+    align-self: flex-end;
+    margin-bottom: 100px;
+}
+#journey{
+    background: url('/images/Group\ 52.svg') #F0EEF7 no-repeat center;
+    background-size: 80%;
+}
+.journey{
+    max-width: 1440px;
+    margin: auto;
+    padding: 5rem 20px;
+    text-align: center;
+}
+.journey img{
+    margin: 2rem 0;
+    width: 35vw;
+    min-width: 300px;
+}
+#team{
+    background: url('/images/Group\ 53.png') no-repeat 100% 200%, linear-gradient(180deg, #F0EEF7 0%, #FFFFFF 100%);
+}
+.team{
+    max-width: 1440px;
+    margin: auto;
+    padding: 5rem 20px;
+}
+.team h1{
+    text-align: center;
+}
+.container-profile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+.card-profile{
+    flex: 1 0 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.top-card{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    width: 8rem;
+    height: 8rem;
+    border: 8px solid #FFFFFF;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+}
+.profile img{
+    width: 8rem;
+}
+.bot-card{
+    width: 250px;
+    min-height: 300px;
+    background-color: #FFFFFF;
+    padding: 80px 20px 20px;
+}
+footer{
+    background-color: #FFFFFF;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.container-details{
+    flex: 1 0 250px;
+    padding: 0px 50px;
+}
+.container-details > h1{
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.container-details > p{
+    font-weight: 400;
+    color: #868686;
+    font-size: 1.1rem;
+}
+.container-details > a{
+    display: block;
+    font-size: 1.5rem;
+    background: #FFB201;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.copyright{
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+#nav-burger{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        left: 15px;
+        z-index: 1001;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .nav-list{
+        display: block;
+    }
+    .nav-list li{
+        margin: 2rem 0;
+    }
+    #nav-burger{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 48px;
+        z-index: 1001;
+    }
+    .open{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #FFD575;
+        width: 100%;
+        height: 500px;
+        z-index: 1000;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+        animation: slidedown 1s 1;
+    }
+    .container-details{
+        padding: 20px;
+    }
+    @keyframes slidedown {
+        0%{
+            height: 0;
+        }
+        50%{
+            height: 520px;
+        }
+    }
+}
